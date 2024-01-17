@@ -152,7 +152,6 @@
 
 .quote-section blockquote {
     width: 61.92%;
-    /* text-align: center; */
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -186,6 +185,7 @@ blockquote p {
 
 .cta-content {
     color: #f9faf8;
+    width: 80%;
 }
 
 .cta-btn {
@@ -217,6 +217,31 @@ blockquote p {
         width: 86.59%;
     }
 
+    .cta-btn {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .cta-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+    }
+
+    .cta-btn {
+        padding: 8px 10px;
+    }
+
+    .call-to-action-section {
+        flex-direction: column;
+        width: 89%;
+        height: max-content;
+        gap: 20px;
+    }
 }
 
 @media (max-width:800px) {
@@ -259,7 +284,27 @@ blockquote p {
         width: 75%;
         font-size: 30px;
     }
-    blockquote p{
+
+    blockquote p {
         font-size: 25px;
+    }
+
+    .call-to-action-section {
+        flex-direction: column;
+        width: 89%;
+        height: max-content;
+        gap: 20px;
+    }
+
+    .cta-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+    }
+
+    .cta-btn {
+        padding: 8px 25px;
     }
 }
