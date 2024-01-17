@@ -138,3 +138,29 @@
     text-align: center;
     color: #626163;
 }
+
+.quote-section{
+    background-color: #e5e7eb;
+    padding:20px;
+}
+
+.quote-section blockquote{
+    width: 65.92%;
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #292e35;
+}
+
+blockquote p{
+    margin-top: 30px;
+    font-style: normal;
+    font-size: 28px;
+    color: #1f2937;
+    text-align: right;
+    font-weight: 800;
+}
