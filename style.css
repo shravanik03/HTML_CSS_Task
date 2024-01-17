@@ -27,7 +27,7 @@
     margin-bottom: 90px;
 }
 
-.icon{
+.icon {
     visibility: hidden;
 }
 
@@ -102,11 +102,11 @@
     color: #d3d4d2;
 }
 
-.information-section{
+.information-section {
     width: 100%;
 }
 
-.information-section h2{
+.information-section h2 {
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
@@ -115,23 +115,23 @@
     color: #1f2937;
 }
 
-.cards{
+.cards {
     display: flex;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     width: 200px;
     align-items: center;
     gap: 10px;
-    margin-bottom: 100px;
 }
 
-.card div{
+.card div {
     width: 150px;
     height: 150px;
     border: 5px solid #3882f6;
@@ -139,18 +139,18 @@
     margin: auto;
 }
 
-.card p{
+.card p {
     text-align: center;
     color: #626163;
 }
 
-.quote-section{
+.quote-section {
     background-color: #e5e7eb;
-    padding:20px;
+    padding: 20px;
     margin-bottom: 100px;
 }
 
-.quote-section blockquote{
+.quote-section blockquote {
     width: 61.92%;
     /* text-align: center; */
     margin: 0 auto;
@@ -162,7 +162,7 @@
     color: #292e35;
 }
 
-blockquote p{
+blockquote p {
     margin-top: 30px;
     font-style: normal;
     font-size: 28px;
@@ -171,7 +171,7 @@ blockquote p{
     font-weight: 800;
 }
 
-.call-to-action-section{
+.call-to-action-section {
     width: 70.92%;
     height: 150px;
     border-radius: 10px;
@@ -184,11 +184,11 @@ blockquote p{
     align-items: center;
 }
 
-.cta-content{
+.cta-content {
     color: #f9faf8;
 }
 
-.cta-btn{
+.cta-btn {
     background-color: #3882f6;
     color: #f9faf8;
     border: 3px solid #f9faf8;
@@ -200,47 +200,66 @@ blockquote p{
     font-weight: 600;
 }
 
-.footer{
+.footer {
     background-color: #1f2937;
     padding: 40px;
 }
 
-.footer p{
-    color:#f9faf8;
+.footer p {
+    color: #f9faf8;
     text-align: center;
 }
 
-@media (max-width:1200px){
-    .navbar,.hero-section{
+@media (max-width:1200px) {
+
+    .navbar,
+    .hero-section {
         width: 86.59%;
     }
-    
+
 }
 
-@media (max-width:800px){
-    .navbar{
+@media (max-width:800px) {
+    .navbar {
         width: 85.72%;
     }
-    .icon{
+
+    .icon {
         visibility: visible;
         color: #f9faf8;
         font-size: 20px;
     }
-    .nav-links{
+
+    .nav-links {
         display: none;
     }
-    .hero-section{
+
+    .hero-section {
         width: 85.72%;
         flex-direction: column;
         justify-content: center;
         margin: auto;
-        gap:30px;
+        gap: 30px;
     }
-    .content{
+
+    .content {
         width: 90%;
     }
-    .hero-image{
+
+    .hero-image {
         width: 100%;
         height: 320px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .quote-section blockquote {
+        width: 75%;
+        font-size: 30px;
+    }
+    blockquote p{
+        font-size: 25px;
     }
 }
