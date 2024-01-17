@@ -142,16 +142,17 @@
 .quote-section{
     background-color: #e5e7eb;
     padding:20px;
+    margin-bottom: 100px;
 }
 
 .quote-section blockquote{
-    width: 65.92%;
+    width: 61.92%;
     /* text-align: center; */
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 70px;
-    font-size: 36px;
-    font-weight: lighter;
+    font-size: 34px;
+    font-weight: 100;
     font-style: italic;
     color: #292e35;
 }
@@ -163,4 +164,33 @@ blockquote p{
     color: #1f2937;
     text-align: right;
     font-weight: 800;
+}
+
+.call-to-action-section{
+    width: 70.92%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 50px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta-content{
+    color: #f9faf8;
+}
+
+.cta-btn{
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: 3px solid #f9faf8;
+    border-radius: 8px;
+    height: fit-content;
+    padding: 8px 35px;
+    width: max-content;
+    font-size: 15px;
+    font-weight: 600;
 }
