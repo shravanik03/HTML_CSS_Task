@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -193,4 +194,14 @@ blockquote p{
     width: max-content;
     font-size: 15px;
     font-weight: 600;
+}
+
+.footer{
+    background-color: #1f2937;
+    padding: 40px;
+}
+
+.footer p{
+    color:#f9faf8;
+    text-align: center;
 }
