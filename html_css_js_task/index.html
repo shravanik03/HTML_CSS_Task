@@ -106,8 +106,10 @@
             </div>
             <div class="hero4">
               <i class="fa-solid fa-clock"></i>
-              Registration deadline: <br />
-              May 07 at 10:30am (PST)
+              <div>
+                <span>Registration deadline:</span> <br />
+                May 07 at 10:30am (PST)
+              </div>
             </div>
           </div>
         </div>
@@ -199,7 +201,7 @@
             </div>
           </div>
           <div class="carousel">
-            <i onclick="slideLeft()" class="fa-solid fa-angle-left"></i>
+            <i id="left-btn" onclick="slideLeft()" class="fa-solid fa-angle-left"></i>
             <div class="user-quotes">
                 <div id="first-quote" class="active quote">
                     <div class="double-quote">“</div>
@@ -227,7 +229,7 @@
                     <div class="double-quote">”</div>
                 </div>
             </div>
-            <i onclick="slideRight()" class="fa-solid fa-angle-right"></i>
+            <i id="right-btn" onclick="slideRight()" class="fa-solid fa-angle-right"></i>
           </div>
         </div>
         <div class="hero-third">
@@ -287,6 +289,7 @@
             </div>
         </div>
       </div>
+      <!--Footer-->
       <footer class="footer">
         <div class="news">
             Get Our Lastest News

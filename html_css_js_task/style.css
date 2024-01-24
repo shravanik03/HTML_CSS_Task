@@ -293,7 +293,7 @@ body {
     width: 309px;
     display: flex;
     gap: 16px;
-
+    align-items: first baseline;
 }
 
 .hero2 {
@@ -309,6 +309,7 @@ body {
     width: 266px;
     display: flex;
     gap: 16px;
+    align-items: first baseline;
 }
 
 .hero4 {
@@ -316,6 +317,17 @@ body {
     width: 248px;
     display: flex;
     gap: 20px;
+    align-items:first baseline;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.hero4 span{
+    font-weight: 700;
 }
 
 .hero1 i,
@@ -505,6 +517,26 @@ body {
     text-align: center;
 }
 
+@keyframes slideAnimationLeft {
+    0% {
+        transform: translateX(-22.92%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideAnimationRight {
+    0% {
+        transform: translateX(22.92%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 .carousel {
     height: 264px;
     width: 1127px;
@@ -519,6 +551,8 @@ body {
     width: 9.88px;
     height: 15.12px;
     padding: 7.56px, 11.06px, 7.56px, 11.06px;
+    position: relative;
+    overflow: hidden;
 }
 
 .carousel i:hover {
@@ -526,18 +560,21 @@ body {
 }
 
 .quote {
-    display: flex;
+    display: none;
     width: 953px;
     height: 173px;
     border-radius: 16px;
-    box-shadow: 0px 1px 3px 0px #0000004D;
-    box-shadow: 0px 4px 8px 3px #00000026;
+    box-shadow: 0px 1px 3px 0px #0000004D,
+        0px 4px 8px 3px #00000026;
     background-color: white;
     color: black;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    display: none;
+}
+
+.user-quotes {
+    display: flex;
 }
 
 .active {
