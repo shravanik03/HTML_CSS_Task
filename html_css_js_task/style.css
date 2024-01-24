@@ -5,6 +5,10 @@
     /* overflow-x: hidden; */
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #wrapper {
     width: 100vw;
     height: 100vh;
@@ -402,6 +406,7 @@
 
 .class-schedule {
     margin-top: 32px;
+    margin-bottom: 40px;
 }
 
 .class-schedule h2 {
@@ -503,7 +508,7 @@
 .carousel {
     height: 264px;
     width: 1127px;
-    background-color: grey;
+    background-image: url(./images/Rectangle\ 111.png);
     display: flex;
     color: white;
     justify-content: space-evenly;
@@ -535,7 +540,7 @@
     display: none;
 }
 
-.active{
+.active {
     display: flex;
 }
 
@@ -699,7 +704,7 @@
 .cancel-policy {
     display: flex;
     margin-left: 196px;
-    gap:15px;
+    gap: 15px;
 }
 
 .cancel-div {
@@ -720,11 +725,175 @@
     font-weight: 700;
 }
 
-.red-span{
+.red-span {
     color: #DC3636;
     font-weight: 700;
 }
 
-.footer{
-    
+.footer {
+    position: relative;
+    height: 411.6px;
+    width: 100%;
+    background-color: #434343;
+
+}
+
+.news {
+    width: 342px;
+    height: 39.98px;
+    position: absolute;
+    top: 52.1px;
+    left: 974px;
+    font-family: PT Sans;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: white;
+}
+
+.some-links {
+    position: absolute;
+    font-family: PT Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    width: 668px;
+    height: 34.72px;
+    left: 139px;
+    top: 118.79px;
+}
+
+.enter-email {
+    width: 348px;
+    height: 52.6px;
+    top: 96.29px;
+    left: 971px;
+    border-radius: 28px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid white;
+    padding-left: 19.28px;
+}
+
+.enter-email::placeholder {
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.subscribe-btn {
+    position: absolute;
+    width: 113.86px;
+    height: 46.29px;
+    top: 99.44px;
+    left: 1202.39px;
+    padding: 8px, 24px, 8px, 24px;
+    border-radius: 28px;
+    gap: 8px;
+    background-color: #F39B4E;
+    color: white;
+    border: 1px solid #F39B4E;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.footer-contact {
+    width: 82px;
+    height: 39.6px;
+    position: absolute;
+    top: 206.32px;
+    left: 139px;
+    color: white;
+    font-family: PT Sans;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.address {
+    width: 448px;
+    height: 24.2px;
+    top: 245.92px;
+    left: 139px;
+    position: absolute;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #F39B4E;
+}
+
+.email-phone {
+    width: 438px;
+    height: 26.3px;
+    position: absolute;
+    top: 283.07px;
+    left: 139px;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: white;
+}
+
+.email-phone span {
+    color: #F39B4E;
+}
+
+.copyright {
+    width: 294px;
+    height: 33.66px;
+    position: absolute;
+    top: 354.7px;
+    left: 136px;
+    color: white;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.footer-icons {
+    display: flex;
+    width: 138.63px;
+    height: 42.08px;
+    top: 248px;
+    left: 1180.87px;
+    position: absolute;
+    gap: 10px;
+}
+
+.privacy {
+    width: 137px;
+    height: 33.66px;
+    top: 354.7px;
+    left: 1172px;
+    position: absolute;
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: white;
 }
