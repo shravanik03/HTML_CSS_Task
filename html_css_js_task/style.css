@@ -939,19 +939,42 @@ body {
     display: none;
 }
 
+.hero3-mobile {
+    display: none;
+}
+
+.some-links-mobile {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 @media (max-width:600px) {
     * {
         overflow-x: hidden;
     }
 
+    #wrapper {
+        position: relative;
+        z-index: 10;
+    }
+
     .navbar {
         padding-bottom: 0;
-        height: 140px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .search-mobile {
+        display: flex;
+        gap: 7px;
     }
 
     .logo {
         position: absolute;
-        top: 71px;
+        top: 25px;
         left: 10px;
         width: 120px;
         height: 50px;
@@ -972,9 +995,34 @@ body {
     .menu {
         display: block;
         position: absolute;
-        top: 81px;
+        top: 28px;
         right: 0px;
     }
+
+    .mobile-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        z-index: 30;
+        right: 20px;
+        background-color: white;
+        padding: 15px;
+        gap: 10px;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-menu a {
+        font-family: PT Sans;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #434343;
+        font-weight: 300;
+        text-decoration: none;
+        border-bottom: 1px solid #111;
+    }
+
 
     .menu i {
         width: 45px;
@@ -999,50 +1047,276 @@ body {
         gap: 40px;
     }
 
-    .ellipse{
+    .ellipse {
         flex-wrap: wrap;
-        gap:10px;
+        gap: 10px;
     }
 
-    .ellipse-third{
+    .ellipse-third {
         margin-top: 10px;
     }
 
+    .member-section{
+        width: 320px;
+    }
 
-    .hero-top{
+    .reduce-rate{
+        width: 320px;
+        
+    }
+     .hero-top {
         display: flex;
         flex-direction: column;
     }
 
-    .hero-main{
-        height: 780px;
+    .user-image{
+        padding-left: 130px;
+    }
+
+    .hero-main {
+        height: 850px;
+        overflow-y: hidden;
         display: flex;
         flex-direction: column;
     }
 
-    .hero-bottom{
-        height: max-content;
+    .hero-bottom {
+        height: 900px;
         bottom: 0;
         top: 560px;
         margin-top: 23px;
-        
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero2 {
+        display: none;
+    }
+
+
+    .hero3-mobile {
+        display: flex;
+        align-items: first baseline;
+        gap: 20px;
+    }
+
+    .hero4 {
+        margin-left: 0;
+    }
+
+    i {
+        overflow-y: hidden;
+        height: max-content;
+        width: max-content;
+    }
+
+    .non-carousel {
         flex-direction: column;
     }
 
-    .hero2{
-        border: none;
-        margin-left: 0;
+    .paragraph {
+        width: 400px;
+        padding-left: 45px;
+        padding-right: 20px;
     }
 
-    .hero1 i{
-        height: fit-content;
+    .content {
+        width: 320px;
+        text-align: justify;
     }
 
-    .hero3{
-        width: 900px;
-        margin-left: 0;
+    .line {
+        width: 320px;
+    }
+
+    .review {
+        width: 420px;
+        
+    }
+
+    .user-review{
+        text-align: justify;
+    }
+
+    .review-btn {
+        margin-bottom: 50px;
+    }
+
+    .carousel {
+        height: 320px;
+        width: 420px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .quote {
+        width: 320px;
+        height: 250px;
+        /* height: max-content; */
+    }
+
+    .active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .double-quote {
+        width: 100px;
+        overflow: hidden;
+        font-size: 60px;
+    }
+
+    .quote-text {
+        overflow: hidden;
+        font-size: 20px;
         height: max-content;
-        margin-bottom: 0;
     }
-    
+
+    .hero-third {
+        height: max-content;
+    }
+
+    .similar-class {
+        height: max-content;
+    }
+
+    .art-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .remote-classes-section {
+        margin-left: 0;
+    }
+
+    .remote-heading {
+        margin-left: 23px;
+    }
+
+    .remote-para {
+        margin-left: 35px;
+        width: 330px;
+        height: max-content;
+        text-align: justify;
+    }
+
+    .learn-about {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .line-remote {
+        margin-left: 35px;
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .cancel-heading {
+        margin-left: 35px;
+    }
+
+    .cancel-para {
+        margin-left: 35px;
+        width: 330px;
+        height: max-content;
+        text-align: justify;
+    }
+
+    .cancel-policy {
+        margin-left: 35px;
+        flex-direction: column;
+    }
+
+    .cancel-div {
+        height: max-content;
+        width: 330px;
+    }
+
+    .footer {
+        overflow: hidden;
+        width: 420px;
+        height: 600px;
+    }
+
+    .news {
+        left: 35px;
+    }
+
+    .some-links {
+        display: none;
+    }
+
+    .some-links-mobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        font-family: PT Sans;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: white;
+        width: 668px;
+        height: 108.72px;
+        left: 30px;
+        top: 186.29px
+    }
+
+    .review-btn{
+        margin-left: 99px;
+    }
+
+    .footer-contact {
+        left: 30px;
+        top: 306.32px;
+    }
+
+    .address {
+        left: 30px;
+        width: 350px;
+        height: max-content;
+        top: 345.92px;
+        ;
+    }
+
+    .email-phone {
+        left: 30px;
+        top: 407.07px;
+        width: 200px;
+        height: max-content;
+    }
+
+    .enter-email {
+        left: 30px;
+        top: 118.79px;
+    }
+
+    .subscribe-btn {
+        top: 121.79px;
+        left: 261.39px;
+    }
+
+    .footer-icons {
+        left: 30px;
+        top: 475px;
+    }
+
+    .copyright {
+        top: 540px;
+        left: 30px;
+    }
+
+    .privacy {
+        left: 250px;
+        top: 540px;
+    }
+
+    .nav-search {
+        display: none;
+    }
 }

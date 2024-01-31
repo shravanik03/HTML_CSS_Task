@@ -25,13 +25,33 @@
   <body>
     <div id="wrapper">
       <!---Navbar-->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#" class="menu-item">Classes</a>
+        <a href="#" class="menu-item">Programs & Events</a>
+        <a href="#" class="menu-item">Blogs</a>
+        <a href="#" class="menu-item">About</a>
+        <a href="#" class="menu-item">Get Involved</a>
+        <a class="search-mobile">
+          <i class="fas fa-search"></i>
+          <div>Search</div>
+        </a>
+        <a class="search-mobile">
+          <i class="fas fa-user-circle"></i>
+          <div>Sign In</div>
+        </a>
+        <a class="search-mobile">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>(0)</span>
+        </a>
+      </div>
       <div class="navbar">
         <div class="logo">
           <span>Logo</span>
         </div>
         <div class="menu">
-          <i class="fa-solid fa-bars"></i>
+          <i id="menuIcon" class="fa-solid fa-bars"></i>
         </div>
+        
         <div class="nav-rem">
           <div>Classes</div>
           <div>Programs & Events</div>
@@ -96,6 +116,13 @@
                 <span class="dates">Jan 05 - Feb 15</span
                 ><span class="wednesday">(5 Wednesdays)</span><br />
                 10:00am - 4:00pm (PST)
+              </div>
+            </div>
+            <div class="hero3-mobile">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="hero3-sub">
+                2042 Balboa St.,<br />
+                San Francisco, CA 94121
               </div>
             </div>
             <div class="hero2">
@@ -298,6 +325,13 @@
             Get Our Lastest News
         </div>
         <pre class="some-links">Who We Are  /   Gift A Class     /   Membership   /   Refund Policy   /   FAQ</pre>
+        <div class="some-links-mobile">
+          <a>Who We Are</a>
+          <a>Gift A Class</a>
+          <a>Membership</a>
+          <a>Refund Policy</a>
+          <a>FAQ</a>
+        </div>
         <div>
             <input type="email" placeholder="Enter your email" class="enter-email"/>
             <button class="subscribe-btn">Subscribe</button>

@@ -49,3 +49,12 @@ function updateQuoteClasses(initial, updated) {
     quotes[initial - 1].classList.remove("active");
     quotes[updated - 1].classList.add("active");
 }
+
+document.getElementById('menuIcon').addEventListener('click', function () {
+    var mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+        mobileMenu.style.display = 'flex';
+    } else {
+        mobileMenu.style.display = 'none';
+    }
+});
